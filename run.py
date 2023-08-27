@@ -59,7 +59,7 @@ Initialize Reptile, start position, and locations of the Trap
 Re-define name of reptile to start with capital
 """
 
-reptile_name = input("Name your reptile: ").capitalize()
+reptile_name = input("Name your reptile: \n").capitalize()
 reptile = Reptile(reptile_name, 0, 0)
 
 """ Position home at the right bottom area of the labyrinth """
@@ -97,7 +97,7 @@ while reptile.x != home.x or reptile.y != home.y:
     """ Move the lizard """
     reptile.display_labyrinth()
     direction = input('Which direction do '
-                      'you want to walk? (N/S/E/W): ').upper()
+                      'you want to walk? (N/S/E/W): \n').upper()
     reptile.walk_direction(direction)
 
 """ Print message at the end of the game """
